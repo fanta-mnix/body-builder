@@ -1,0 +1,35 @@
+package org.bodybuilder.porra;
+
+/**
+ * @author Rafael Fantini da Costa
+ */
+public class BodyBuilder {
+    private int age;
+    private Trapezio trapezio;
+    private Double foodEaten;
+    private Body.OnExitJaulaListener onExitJaulaListener;
+
+    public BodyBuilder setAge(int age) {
+        this.age = age;
+        return this;
+    }
+
+    public BodyBuilder setTrapezio(Trapezio trapezio) {
+        this.trapezio = trapezio;
+        return this;
+    }
+
+    public BodyBuilder setFoodEaten(Double foodEaten) {
+        this.foodEaten = foodEaten;
+        return this;
+    }
+
+    public BodyBuilder setOnExitJaulaListener(Body.OnExitJaulaListener onExitJaulaListener) {
+        this.onExitJaulaListener = onExitJaulaListener;
+        return this;
+    }
+
+    public Body buildPORRA() {
+        return new Body(age, trapezio, foodEaten, onExitJaulaListener);
+    }
+}
