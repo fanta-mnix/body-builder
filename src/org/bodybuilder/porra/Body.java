@@ -41,7 +41,7 @@ public class Body implements Scream{
         return size;
     }
 
-    public void setSize(Double size) {
+    public void setSizeTrapezio(Double size) {
         this.size = size;
     }
 

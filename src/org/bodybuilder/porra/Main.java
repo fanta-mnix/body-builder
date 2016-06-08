@@ -19,6 +19,7 @@ public class Main {
                         }
                     })
                     .buildPORRA();
+            monstro.bEEEWWWW();
         }while (monstro.getSizeTrapezio()<=13);
         
     }
