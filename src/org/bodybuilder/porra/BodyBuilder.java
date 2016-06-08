@@ -9,6 +9,7 @@ public class BodyBuilder {
     private Double foodEaten;
     private Body.OnExitJaulaListener onExitJaulaListener;
     private Hora hora;
+    private String helpQuote;
 
     public BodyBuilder setAge(int age) {
         this.age = age;
@@ -36,6 +37,11 @@ public class BodyBuilder {
 
     public BodyBuilder setHora(Hora hora) {
         this.hora = hora;
+        return this;
+    }
+
+    public BodyBuilder setHelpQuote(String helpQuote) {
+        this.helpQuote = helpQuote;
         return this;
     }
 }
