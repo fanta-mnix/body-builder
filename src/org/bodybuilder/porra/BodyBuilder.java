@@ -8,6 +8,7 @@ public class BodyBuilder {
     private Trapezio trapezio;
     private Double foodEaten;
     private Body.OnExitJaulaListener onExitJaulaListener;
+    private Hora hora;
 
     public BodyBuilder setAge(int age) {
         this.age = age;
@@ -31,5 +32,10 @@ public class BodyBuilder {
 
     public Body buildPORRA() {
         return new Body(age, trapezio, foodEaten, onExitJaulaListener);
+    }
+
+    public BodyBuilder setHora(Hora hora) {
+        this.hora = hora;
+        return this;
     }
 }
