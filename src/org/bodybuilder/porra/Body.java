@@ -3,7 +3,7 @@ package org.bodybuilder.porra;
 /**
  * @author Rafael Fantini da Costa
  */
-public class Body implements Scream{
+public class Body implements Scream {
     private final int age;
     private final Trapezio trapezio;
     private final Double foodEaten;
@@ -33,10 +33,6 @@ public class Body implements Scream{
         return onExitJaulaListener;
     }
 
-    public interface OnExitJaulaListener {
-        void onExitJaula();
-    }
-
     public Double getSizeTrapezio() {
         return size;
     }
@@ -50,7 +46,9 @@ public class Body implements Scream{
         System.out.println("BEEEEWWWW!");
     }
 
-
+    public interface OnExitJaulaListener {
+        void onExitJaula();
+    }
 
 
 }

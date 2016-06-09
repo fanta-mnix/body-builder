@@ -6,7 +6,7 @@ package org.bodybuilder.porra;
 public class Main {
     public static void main(String[] args) {
         Body monstro;
-        do{
+        do {
             monstro = new BodyBuilder()
                     .setHora(Hora.DO_SHOW)
                     .setAge(37)
@@ -20,7 +20,7 @@ public class Main {
                     })
                     .buildPORRA();
             monstro.bEEEWWWW();
-        }while (monstro.getSizeTrapezio()<=13);
-        
+        } while (monstro.getSizeTrapezio() <= 13);
+
     }
 }
