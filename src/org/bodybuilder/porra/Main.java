@@ -8,6 +8,7 @@ public class Main {
         Body monstro;
         do {
             monstro = new BodyBuilder()
+                    .setHelpQuote("Ajuda o maluco que tá doente!")
                     .setHora(Hora.DO_SHOW)
                     .setAge(37)
                     .setFoodEaten(Double.POSITIVE_INFINITY)
